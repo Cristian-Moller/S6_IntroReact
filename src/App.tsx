@@ -1,11 +1,15 @@
-import Scene from './components/scene/scene'
-import './App.css'
+import Scene from "./components/scene/scene"
+import data from "./components/data"
 
 function App() {
 
   return (
     <>
-      <Scene />
+      {
+        data.map((line, index) => (
+          <Scene key={index} text={line} />
+        ))
+      }
     </>
   )
 }

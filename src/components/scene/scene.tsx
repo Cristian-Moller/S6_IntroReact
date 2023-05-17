@@ -1,4 +1,13 @@
-
-const Scene = () => <>Nuestro héroe estaba flotando por el espacio sideral cuando a lo lejos divisó una nave espacial</>;
+type lineProp = {
+  text: string;
+}
+const Scene: React.FC<lineProp> = ({text}: lineProp) => {
+  
+  return (
+    <>
+      <p>{text}</p>
+    </>
+  )
+}
 
 export default Scene
