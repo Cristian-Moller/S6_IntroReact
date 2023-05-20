@@ -1,16 +1,13 @@
 import Scene from "./components/scene/scene"
-import data from "./components/data"
+import { StyledBody } from "./styled"
+
 
 function App() {
 
   return (
-    <>
-      {
-        data.map((line, index) => (
-          <Scene key={index} text={line} />
-        ))
-      }
-    </>
+    <StyledBody>
+      <Scene />
+    </StyledBody>
   )
 }
 
