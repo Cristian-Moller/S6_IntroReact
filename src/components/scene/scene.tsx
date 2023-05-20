@@ -21,15 +21,15 @@ const Scene = () => {
     if (hasPrevious) {
       setNum(num - 1);
     } else {
-      setNum(3);
+      setNum(data.length-1);
     }
     console.log('previous',num)
   }
 
   return (
     <>
-      <Button btnText="Previous" handleClick={handlePreviousClick}/>
-      <Button btnText="Next" handleClick={handleNextClick} />
+      <Button btnText="Previous" background="#d15858" handleClick={handlePreviousClick}/>
+      <Button btnText="Next" background="#0dbd0d" handleClick={handleNextClick} />
       {
         data.map((line, index) => (
           <Border 
