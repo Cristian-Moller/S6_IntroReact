@@ -7,7 +7,7 @@ type buttonProp = {
   handleClick?: ReactEventHandler;
 }
 
-export const Button: React.FC<buttonProp> = ({btnText, background, handleClick}: buttonProp) => {
+export const Button = ({btnText, background, handleClick}: buttonProp) => {
   
   return (
     <StyledButton 
@@ -18,4 +18,3 @@ export const Button: React.FC<buttonProp> = ({btnText, background, handleClick}:
     </StyledButton>
   )
 }
-

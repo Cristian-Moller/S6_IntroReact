@@ -14,7 +14,14 @@ export const StyledButton = styled.button`
   text-align: center;
   font-size: 2rem;
   align-item: center;
+  cursor: pointer;
 `
 export const StyledBody = styled.div`
   text-align: -webkit-center;
 `
+export const Background = styled.div<{ img: string }>`
+  background-image: ${({img}) => `url(${img})`};
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+`;
